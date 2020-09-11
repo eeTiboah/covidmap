@@ -1,0 +1,20 @@
+/* .country{
+    height: 120px;
+    width: 150px;
+    background-color: whitesmoke;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+.case{
+    color: red;
+} */
+
+.btn{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+}
