@@ -49,7 +49,6 @@ function Map(){
                 <div>
                     <div className={styles.country_details}>
                         <div className={cx(styles.country_flag, styles.item)}>
-                            <h2>{country.country}</h2>
                             <img src={country.flag} alt="Country Flag" />
                         </div>
                         <div>
