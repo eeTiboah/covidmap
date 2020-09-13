@@ -11,9 +11,13 @@ function Map(){
     const [countryDisplay, setCountryDisplay] = useState(null)
 
     useEffect(()=>{
+        const abortController = new AbortController()
+        // const signal = abortController.signal
+
         async function getCountry(){
             const data = await fetchCountryData()
             setFetchCountry(data);
+            abortController.abort()
         }
         getCountry()
     }, [])
