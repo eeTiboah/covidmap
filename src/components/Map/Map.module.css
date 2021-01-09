@@ -18,9 +18,10 @@
 
 .country_info{
     position: relative;
+    flex-basis: 25%;
 }
 
-.flag{
+.country_flag{
     position: absolute;
     bottom: 50%;
 }
@@ -28,7 +29,7 @@
 .count{
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 25px;
 }
 
 
@@ -46,12 +47,12 @@
 
 
 .item{
-    margin: 10px;
+    /* margin: 10px; */
     position: relative;
 }
 
 .progress{
-    height: 5px;
+    height: 10px;
     width: 300px;
     background-color: rgb(216, 209, 209);
     border-radius: 20px;
@@ -74,10 +75,15 @@
         width: 100%;
         flex-direction: column;
         text-align: center;
+        margin: 0 0;
         
     }
     h2{
         text-align: center;
+    }
+    .confirmed{
+        text-align: center;
+        margin-left: 100px;
     }
   }
 

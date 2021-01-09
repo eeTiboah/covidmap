@@ -49,32 +49,33 @@ function Map(){
                 <div>
                     <div className={styles.country_details}>
                         <div className={cx(styles.country_flag, styles.item)}>
+                            <h2 style={{textAlign: "center"}}>{country.country}</h2>
                             <img src={country.flag} alt="Country Flag" />
                         </div>
-                        <div>
+                        <div className={styles.confirmed}>
                             <h2>Confirmed</h2>
-                            <CountUp style={{textAlign: "justify"}} start={0} end={country.cases} duration="5" separator="," />
+                            <h2><CountUp style={{textAlign: "center"}} start={0} end={country.cases} duration="5" separator="," /></h2>
                         </div>
                         <div className={cx(styles.country_info)}>
                             <div>
                                 <div className={styles.item}>
                                     <div className={styles.head}>
-                                        <p>Recovered</p>
-                                        <CountUp className={styles.count} start={0} end={country.recovered} duration="5" separator="," />
+                                        <h2>Recovered</h2>
+                                        <h2><CountUp className={styles.count} start={0} end={country.recovered} duration="5" separator="," /></h2>
                                     </div>
                                     <Progress done={country.recoveredPerc} color="green"/>
                                 </div>
                                 <div className={styles.item}>
                                     <div className={styles.head}>
-                                        <p>Active</p>
-                                        <CountUp className={styles.count} start={0} end={country.active} duration="5" separator="," />
+                                        <h2>Active</h2>
+                                        <h2><CountUp className={styles.count} start={0} end={country.active} duration="5" separator="," /></h2>
                                     </div>
                                     <Progress done={country.activePerc} color="red"/>
                                 </div>
                                 <div className={styles.item}>
                                     <div className={styles.head}>
-                                        <p>Deaths</p>
-                                        <CountUp className={styles.count} start={0} end={country.deaths} duration="5" separator="," />
+                                        <h2>Deaths</h2>
+                                        <h2><CountUp className={styles.count} start={0} end={country.deaths} duration="5" separator="," /></h2>
                                     </div>
                                     <Progress done={country.deathsPerc} color="black"/>
                                 </div>
